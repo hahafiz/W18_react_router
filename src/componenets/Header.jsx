@@ -1,4 +1,5 @@
 import { routeList } from "../routes/Root";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -8,9 +9,12 @@ const Header = () => {
       <a href="/profile">Profile</a>
       <a href="/contact">Contact</a> */}
       {routeList.map((routeItem) => (
-        <a href={routeItem.path} key={routeItem.path}>
+        // <a href={routeItem.path} key={routeItem.path}>
+        //   {routeItem.name}
+        // </a>
+        <Link to={routeItem.path} key={routeItem.path}>
           {routeItem.name}
-        </a>
+        </Link>
       ))}
     </header>
   );
