@@ -1,5 +1,12 @@
+import Header from "../componenets/Header";
+
 const Profile = () => {
-  return <div>Profile</div>;
+  return (
+    <>
+      <Header />
+      <div>Profile</div>
+    </>
+  );
 };
 
 export default Profile;

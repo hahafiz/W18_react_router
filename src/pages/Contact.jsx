@@ -1,5 +1,12 @@
+import Header from "../componenets/Header";
+
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <>
+      <Header />
+      <div>Contact</div>
+    </>
+  );
 };
 
 export default Contact;
